@@ -96,41 +96,4 @@ public final class Main extends JavaPlugin implements Listener {
         return slimePlugin;
     }
 
-    /*
-    @EventHandler
-    public void onChat(BlockBreakEvent event)  {
-        String world_name = event.getPlayer().getWorld().getName();
-        World world = event.getPlayer().getWorld();
-        System.out.println("world_name " + world_name);
-
-        World defaultWorld = (World)Bukkit.getWorlds().get(0);
-        Location spawnLocation = defaultWorld.getSpawnLocation();
-
-        event.getPlayer().teleport(spawnLocation);
-
-        if (Bukkit.unloadWorld(world, true)) {
-            event.getPlayer().sendMessage("world unloaded");
-        }
-
-        Bukkit.getScheduler().runTaskLater(this, new Runnable() {
-            @Override
-            public void run() {
-                WorldsConfig config = ConfigManager.getWorldConfig();
-                WorldData worldData = (WorldData)config.getWorlds().get(world_name);
-
-                if(worldData != null) {
-                    try {
-                        SlimeLoader loader = SWMPlugin.getInstance().getLoader(worldData.getDataSource());
-                        SlimeWorld slimeWorld =  slimePlugin.loadWorld(loader, world_name, true, worldData.toPropertyMap());
-                        SWMPlugin.getInstance().generateWorld(slimeWorld);
-                    } catch (CorruptedWorldException | NewerFormatException |  WorldInUseException | UnknownWorldException | IOException e){
-                        e.printStackTrace();
-                    }
-
-                }
-            }
-        }, 120);
-    }
-
-     */
 }
