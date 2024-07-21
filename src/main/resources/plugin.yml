@@ -1,0 +1,9 @@
+name: SimpleSkyWars
+version: '${project.version}'
+main: com.venned.simpleskywars.Main
+depend:
+  - PlaceholderAPI
+  - SlimeWorldManager
+commands:
+  skywars:
+    description: Main Command SkyWars System

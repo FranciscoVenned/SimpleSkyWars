@@ -1,0 +1,38 @@
+scoreboards:
+ lobby:
+  title: "&cElPepe"
+  lines:
+   - "§7» §aRango§8:"
+   - "§c None"
+   - " "
+   - "§7» §aPing§8:"
+   - "%ping%"
+   - " "
+   - "§7» §aNickName"
+   - "%player_name%"
+ game-world:
+  title: "&b&lSKYWARS"
+  lines:
+   - " "
+   - "&7» &aMap5"
+   - "&a%skywars_map%"
+   - " "
+   - "&7» &aStatus"
+   - "&a%skywars_gamestate%"
+   - "&a%skywars_current_players%&c/&a%skywars_max_players%"
+lobby-data:
+ world: "world"
+ location: 14.451,60.0,1475.0
+ location-portal:
+  pos1: -13.0,73.0,1456.0
+  pos2: -2.0,62.0,1466.0
+
+messages:
+ player-leave: "&cYou have left the game"
+ plugin-reload: "&c&lPLUGIN RELOAD"
+ player-join: "&c[!] &7%player_name% join map &7[&c%current_players%&7/&c%max_players%&7]"
+ game-starting: "&aStarting in %time_left%"
+ insufficient-players: "&cThe game can't start! There are not enough players."
+ game-not-joinable: "&cGame not avaible"
+ game-won: "&aThe Player %player_name% has just won the game"
+ player-kill: "&6&l(!) &c%player_name% &ewas killed by &a%killer_name% &e."
